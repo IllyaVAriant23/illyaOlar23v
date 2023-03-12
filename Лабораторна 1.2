@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+ 
+int main()
+{
+    int x0=1, y0=1, r, x1, y1, a, b;
+    printf("Радиус:"); scanf("%d", &r);
+    printf("X: "); scanf("%d", &x1);
+    printf("Y: "); scanf("%d", &y1);
+    a = (x0-x1);
+    b = (y0-y1);
+    
+    if(pow(a,2)+pow(b,2)<=pow(r,2)) printf("точка лежить у колі радiуса \n");
+    else printf("точка не лежить у колі радiуса\n");
+    
+}
+ 

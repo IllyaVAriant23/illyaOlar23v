@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int x0 = 1, y0 = 1, r, x1, y1, a, b;
+    printf("Радіус: "); 
+    scanf("%d", &r);
+    printf("X: "); 
+    scanf("%d", &x1);
+    printf("Y: "); 
+    scanf("%d", &y1);
+    
+    a = x0 - x1; 
+    b = y0 - y1;
+    
+    if (a == 0 && b == 0) {
+        printf("Точка є центром кола радіуса.\n");
+    } else if (pow(a, 2) + pow(b, 2) <= pow(r, 2)) {
+        printf("Точка лежить у колі радіуса.\n");
+    } else {
+        printf("Точка не лежить у колі радіуса.\n");
+    }
+    
+    return 0;
+}

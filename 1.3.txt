@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int d, s = 0, p = 1;
+    printf("Введіть чотиризначне число: ");
+    scanf("%d", &d);
+    int a = d / 1000;
+    int b = (d / 100) % 10;
+    int c = (d / 10) % 10;
+    int e = d % 10;
+    s = a + b + c + e;
+    p = a * b * c * e;
+    printf("Сума цифр: %d\n", s);
+    printf("Добуток цифр: %d\n", p);
+    
+    return 0;
+}
+
+
+
+
